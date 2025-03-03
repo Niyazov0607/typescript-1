@@ -381,4 +381,143 @@
 
 // console.log(mergedObject);
 
+// While questions
+
+// function problem1(a: number, b: number): void {
+//     let remainingLength = a;
+//     while (remainingLength >= b) {
+//         remainingLength -= b;
+//     }
+//     console.log(remainingLength);
+// }
+// problem1(10, 3);
+
+// function problem2(a: number, b: number): void {
+//     let count = 0;
+//     while (a >= b) {
+//         a -= b;
+//         count++;
+//     }
+//     console.log(count);
+// }
+
+// problem2(10, 3);
+
+// function problem3(n: number, k: number): void {
+//     let butun = 0;
+//     let qoldiq = n;
+//     while (qoldiq >= k) {
+//         qoldiq -= k;
+//         butun++;
+//     }
+//     console.log(`${butun}, ${qoldiq}`);
+// }
+// problem3(10, 3);
+
+// function problem4(n: number): void {
+//     let isPowerOfThree = true;
+
+//     while (n > 1) {
+//         if (n % 3 !== 0) {
+//             isPowerOfThree = false;
+//             break;
+//         }
+//         n = n / 3;
+//     }
+
+//     if (isPowerOfThree && n === 1) {
+//         console.log("3 ning darajasi");
+//     } else {
+//         console.log("3 ning darajasi emas");
+//     }
+// }
+
+// problem4(27);
+
+// function problem5(n: number): void {
+//     let k = 0;
+
+//     while (n > 1) {
+//         if (n % 2 !== 0) {
+//             console.log("n soni 2 ning darajasi emas.");
+//             return;
+//         }
+//         n = n / 2;
+//         k++;
+//     }
+
+//     console.log("n soni 2 ning darajasi. k =", k);
+// }
+
+// problem5(16);
+
+// function divideWithoutOperators(n: number, m: number): void {
+//     let quotient = 0;
+//     let remainder = n;
+
+//     while (remainder >= m) {
+//         remainder -= m;
+//         quotient++;
+//     }
+
+//     console.log(`Quotient: ${quotient}, Remainder: ${remainder}`);
+// }
+
+// divideWithoutOperators(17, 5);
+
+// function printDigitsReverse(n: number): void {
+//     while (n > 0) {
+//         console.log(n % 10);
+//         n = Math.floor(n / 10);
+//     }
+// }
+
+// printDigitsReverse(1234);
+
+// function sumAndCountDigits(n: number): void {
+//     let sum = 0;
+//     let count = 0;
+
+//     while (n > 0) {
+//         sum += n % 10;
+//         count++;
+//         n = Math.floor(n / 10);
+//     }
+
+//     console.log(`Sum of digits: ${sum}, Count of digits: ${count}`);
+// }
+
+// sumAndCountDigits(1234);
+
+// function containsTwo(n: number): void {
+//     let hasTwo = false;
+
+//     while (n > 0) {
+//         if (n % 10 === 2) {
+//             hasTwo = true;
+//             break;
+//         }
+//         n = Math.floor(n / 10);
+//     }
+
+//     console.log(hasTwo ? "Contains 2" : "Does not contain 2");
+// }
+
+// containsTwo(12345);
+
+// function containsOdd(n: number): void {
+//     let hasOdd = false;
+
+//     while (n > 0) {
+//         if ((n % 10) % 2 !== 0) {
+//             hasOdd = true;
+//             break;
+//         }
+//         n = Math.floor(n / 10);
+//     }
+
+//     console.log(hasOdd ? "Contains odd digits" : "No odd digits");
+// }
+
+// containsOdd(2468);
 
